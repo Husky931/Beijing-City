@@ -18,6 +18,8 @@ export default function AttractionTemplatePage() {
     const [imageArrayNumber, setImageArrayNumber] = useState(0)
 
     const { slug } = useParams()
+    console.log(slug)
+    console.log(useParams())
     
     useEffect(() => {
         const getPage = textData.filter(f => f.id === slug);

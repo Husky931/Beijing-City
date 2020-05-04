@@ -1,6 +1,6 @@
 import React from 'react';
 import AttractionEntryBox from '../attraction-components/AttractionEntryBox';
-import { useRouteMatch, Link } from 'react-router-dom';
+import { useRouteMatch, Link, useHistory, useParams } from 'react-router-dom';
 // import Error from './Error'
 
 import beihai1 from '../images/beihai-1.jpeg';
@@ -16,7 +16,11 @@ import tianmen1 from '../images/tianmen-square-1.jpg';
 export default function Attraction() {
 
     let {url} = useRouteMatch()
-    // console.log(path)
+
+    console.log(url)
+    console.log(useRouteMatch())
+    console.log(useHistory())
+    console.log(useParams())
 
   return (
     <>
