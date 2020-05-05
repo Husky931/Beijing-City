@@ -63,12 +63,7 @@ export default function MasterNightlifeTemplate({id, title, rating, text, open, 
                     <div className='template-icons'>
                         <FiEdit2 />
                         <p className='temp-icons-desc'><span className='make-bold'>Phone:{phone}</span></p>
-                    </div>
-                    <div className='template-icons'>
-                        <FaMapMarked />
-                        <p className='temp-icons-desc'><span className='make-bold'>Check on Google maps</span></p>
-                    </div>
-                    
+                    </div>                    
                 </div>
 
                
