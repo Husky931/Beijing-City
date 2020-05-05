@@ -17,15 +17,10 @@ export default function Attraction() {
 
     let {url} = useRouteMatch()
 
-    console.log(url)
-    console.log(useRouteMatch())
-    console.log(useHistory())
-    console.log(useParams())
-
   return (
     <>
     <div className='attraction-full-div-component'>
-         <Link to={`${url}/lama-temple`} className='link-attractions'>
+        <Link to={`${url}/lama-temple`} className='link-attractions'>
               <AttractionEntryBox img={lamatemple1} title={'Lama temple'} introText={'A series of beautiful pavilions comprise this Mongolian-Tibetan yellow-sect temple, which features an impressive fifty-four-foot high Buddha carved from one piece of Tibetan sandalwood.'} />
         </Link>
         <Link to={`${url}/forbidden-city`} className='link-attractions'>
