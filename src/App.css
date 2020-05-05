@@ -930,34 +930,33 @@ label {
   padding-bottom: 3px;
 }
 
-
-
  /* NIGHTLIFE PAGE BELOW  ------------------------------------------------------------------------ */
 .nightlife-full-page-div {
-  width: 80%;
-  height: 800px;
-  border: 1px solid black;
+  width: 95%;
+  height: auto;
+  /* border: 1px solid black; */
   margin: 30px auto;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  background-color: white;
   /* align-items: center; */
 }
 
-.attraction-template-page-full {
+.nightlife-template-page-full {
   width: 80%;
   height: auto;
   /* border: 1px solid silver; */
-  margin: 70px auto;
+  margin: 20px auto;
   display: flex;
   flex-direction: row;
-  background-color: white;
-  background-color: #f2f2f2
+  background-color: #f2f2f2;
 }
 .left-side-attraction {
   /* border: 1px solid silver; */
   flex: 3;
   padding-right: 20px;
+  border: 1px solid black;
 }
 .right-side-attraction {
   /* border: 1px solid silver; */
@@ -1066,8 +1065,8 @@ label {
 .template-icon-botton-header-2 {
   font-family: 'Roboto', sans-serif;
 }
-.see-available-tours {
-  width: 80%;
+.see-available-tours-nightlife {
+  width: 50%;
   background-color: black;
   border: 2px solid silver;
   text-align: center;
@@ -1077,6 +1076,8 @@ label {
   padding: 15px;
   padding-left: 30px;
   padding-right: 30px;
+  margin-bottom: 10px;
+  cursor: pointer;
 }
 .template-image-holder {
   width: 100%;

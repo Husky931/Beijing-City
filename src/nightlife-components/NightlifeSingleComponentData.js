@@ -23,7 +23,7 @@ export default [
         entryFee: '50 ¥',
         address: 'West Gate of Chaoyang Park',
         phone: '86-10-65003377',
-        img: club1
+        img: [club1, club2, club3, club4]
     },
     {
         id: 2,
@@ -35,7 +35,7 @@ export default [
         entryFee: '100 ¥',
         address: 'Inside Workers Stadium north gate',
         phone: '86-10-65302889',
-        img: club2
+        img: [club2, club3, club4, club5]
     },
     {
         id: 3,
@@ -46,7 +46,7 @@ export default [
         entryFee: '70 ¥',
         address: '6 Gongti Xilu Gongti West Gate',
         phone: '86-10-65519081',
-        img: club3
+        img: [club3, club4, club5, club6]
     },
     {
         id: 4,
@@ -57,7 +57,7 @@ export default [
         entryFee: 'Free',
         address: 'RongFang 2008 East Street 8',
         phone: '86-10-65528888',
-        img: club4
+        img: [club4, club5, club6, club7]
     },
     {
         id: 5,
@@ -68,7 +68,7 @@ export default [
         entryFee: 'Free',
         address: '8 Gongti Xi Lu Gongti,Chaoyang',
         phone: '86-10-8599-9999',
-        img: club5
+        img: [club5, club6, club7, club8]
     },
     {
         id: 6,
@@ -79,7 +79,7 @@ export default [
         entryFee: '50 ¥',
         address: 'Olympic stadium, east gate',
         phone: '86-10-6551 6898/78',
-        img: club6
+        img: [club6, club7, club8, club9]
     },
     {
         id: 7,
@@ -90,7 +90,7 @@ export default [
         entryFee: '150 ¥',
         address: 'Huaqingjiayuan, Haidian',
         phone: '86-10-62863679',
-        img: club7
+        img: [club7, club8, club9, club10]
     },
     {
         id: 8,
@@ -101,7 +101,7 @@ export default [
         entryFee: '50 ¥',
         address: 'Inside Workers Stadium north gate,',
         phone: '86-10-65936215',
-        img: club8
+        img: [club8, club9, club10, club1]
     },
     {
         id: 9,
@@ -112,7 +112,7 @@ export default [
         entryFee: 'Free',
         address: 'Fengtai Xinli 9',
         phone: '86-10-65003377',
-        img: club9
+        img: [club9, club10, club1, club2]
     },
     {
         id: 10,
@@ -123,6 +123,6 @@ export default [
         entryFee: '100 ¥',
         address: 'South Gate of Ditan Park',
         phone: '86-10-64282288',
-        img: club10
+        img: [club10, club1, club2, club3]
     }
 ]
