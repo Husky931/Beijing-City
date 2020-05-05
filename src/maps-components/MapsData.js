@@ -23,6 +23,6 @@ const touristText = `Beijing is an Ancient Capital of China with famous attracti
 const tripOptionsText = `This map below shows you the best Beijing side trips. This is a good options if you have few days spare and would like to explore some cool place in China. The transport duration ranges from one hour plane flight to 5 hours train ride. Your pick!`
 const zooText = `Beijing Zoo is now the biggest zoo in China, its highlights are Panda House and Aquarium. Our Beijing Zoo map shows you layout out of the zoo and the location of Panda House and Visitor Information Center.`
 
-export const headerTitle = ['Best areas in Beijing City', 'Forbidden city map', 'Map of Lama Temple', 'Best Landmarks in Beijing City', 'Best neightborhoods to stay in', 'Subway map', 'Map of Temple of Heaven', 'Tianmen Square map', 'Tourist attraction map', 'Beijing Zoo map']
+export const headerTitle = ['Best areas in Beijing City', 'Forbidden city map', 'Map of Lama Temple', 'Best Landmarks in Beijing City', 'Best neightborhoods to stay in', 'Subway map', 'Map of Temple of Heaven', 'Tianmen Square map', 'Tourist attraction map','Side Trip Options' , 'Beijing Zoo map']
 export const imagesMaps = [areasMap, forbiddenMap, lamaMap, landmarksMap, neighborhoodsMap, subwayMap, templeHeavenMap, tianmenSquareMap, touristMap, tripOptionsMap, zooMap]
 export const mapText = [areasText, forbiddenText, lamaText, landmarksText, neighborhoodsText, subwayText, templeHeavenText, tianmenSquareText, touristText, tripOptionsText, zooText ]

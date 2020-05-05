@@ -1,11 +1,11 @@
 import React from 'react'
 
 
-export default function SingleMapText() {
+export default function SingleMapText({mapText}) {
 
     return (
-        <div>
-        I am Single Map Text
+        <div className='maps-text-div'>
+            {mapText}
         </div>
     )
 }

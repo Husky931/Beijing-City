@@ -1,11 +1,11 @@
 import React from 'react'
 
 
-export default function SingleMapHeader() {
+export default function SingleMapHeader({headerTitle}) {
 
     return (
         <div className='map-header-div'>
-        I am Single Map Header
+                {headerTitle}
         </div>
     )
 }
