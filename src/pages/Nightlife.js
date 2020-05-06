@@ -1,9 +1,16 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import MasterNightlifeTemplate from '../nightlife-components/MasterNightlifeTemplate'
 import nightlifeData from '../nightlife-components/NightlifeSingleComponentData'
 
 
-export default function Nightlife() {
+export const Nightlife = React.forwardRef((props, ref) => {
+
+  useEffect(() => {
+    if (ref.current.checked === true) {
+      ref.current.checked = false
+    }
+  })
+  
   return (
     <div className='nightlife-full-page-div'>
 
@@ -14,4 +21,4 @@ export default function Nightlife() {
 
     </div>
   );
-}
+}) 

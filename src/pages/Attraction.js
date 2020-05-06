@@ -16,12 +16,10 @@ export const Attraction = forwardRef((props,ref) => {
 
   let {url} = useRouteMatch()
 
-
     useEffect(() => {
       if (ref.current.checked === true) {
            ref.current.checked = false
       }
-      console.log(ref.current.checked)
     })
 
 return (

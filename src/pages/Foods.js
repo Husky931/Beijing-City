@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import FoodFatherComponent from '../foods-components/FoodFatherComponent'
 
 import {textBeijingDuck} from '../foods-components/FoodData'
@@ -17,7 +17,14 @@ import foodFriedTripe from '../images/food-quick-fried-tripe.jpg'
 
 
 
-export default function Foods() {
+export const  Foods = React.forwardRef((props, ref) => {
+
+  useEffect(() => {
+    if (ref.current.checked === true) {
+      ref.current.checked = false
+    }
+  })
+
   return (
     <div className='foods-full-div'> 
         <FoodFatherComponent title={'Beijing Duck'} img={foodDuckImage} text={textBeijingDuck} />
@@ -28,4 +35,4 @@ export default function Foods() {
         <FoodFatherComponent title={'Quick-fried Tripe'} img={foodFriedTripe} text={textQuickFriedTripe} />
     </div>
   );
-}
+}) 

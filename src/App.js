@@ -1,12 +1,12 @@
-import React, { useRef } from 'react';
+import React, { useRef, useEffect } from 'react';
 import {Navbar}  from './navigation-components/Navbar'
 import Home from './pages/Home'
-import {Attraction}  from './pages/Attraction'
-import Tours from './pages/Tours'
-import Museum from './pages/Museum'
-import Foods from './pages/Foods'
-import Nightlife from './pages/Nightlife'
-import Maps from './pages/Maps'
+import { Attraction }  from './pages/Attraction'
+import { Tours } from './pages/Tours'
+import { Museums } from './pages/Museum'
+import {Foods} from './pages/Foods'
+import {Nightlife} from './pages/Nightlife'
+import {Maps} from './pages/Maps'
 import Error from './pages/Error'
 
 import AttractionTemplatePage from './attraction-components/AttractionTemplatePage'
@@ -20,6 +20,12 @@ import { Switch, Route } from 'react-router-dom';
 export default function App() {
 
   const ref = useRef()
+
+  useEffect(() => {
+    if (ref.current.checked === true) {
+      ref.current.checked = false
+    }
+  })
 
   return (
     <>
@@ -36,22 +42,22 @@ export default function App() {
           <AttractionTemplatePage />
         </Route>  
         <Route path='/tours'>
-          <Tours />
+          <Tours ref={ref} />
         </Route>
         <Route exact path='/museum'>
-          <Museum />
+          <Museums ref={ref} />
         </Route>
         <Route exact path='/museum/:smug'>
           <MuseumSinglePage allTheMuseumData={allTheMuseumData} />
         </Route>
         <Route path='/foods'>
-          <Foods />
+          <Foods ref={ref} />
         </Route>
         <Route path='/nightlife'>
-          <Nightlife />
+          <Nightlife ref={ref} />
         </Route>
         <Route path='/maps'>
-          <Maps />
+          <Maps ref={ref} />
         </Route>
         <Route path='*'>
           <Error />

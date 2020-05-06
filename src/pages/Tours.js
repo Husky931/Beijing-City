@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import TourComplete from '../tours-components/TourComplete';
 import GoogleMaps from '../tours-components/GoogleMaps';
 
@@ -22,7 +22,13 @@ import { foodText } from '../tours-components/TourTextParagraphs'
 import { artText } from '../tours-components/TourTextParagraphs'
 import { imperialText } from '../tours-components/TourTextParagraphs'
 
-export default function Tours() {
+export const Tours = React.forwardRef((props, ref) => {
+
+  useEffect(() => {
+    if (ref.current.checked === true) {
+      ref.current.checked = false
+    }
+  })
 
   const map1 = <iframe className='source' title='1' src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3059.3360611359208!2d116.38709081538128!3d39.93387197942419!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x35f0531c2f0bd64b%3A0x8eee6e3aca8bb34e!2sHutong%20Tour%2C%20Shi%20Cha%20Hai%2C%20Xicheng%20Qu%2C%20Beijing%20Shi%2C%20China!5e0!3m2!1sen!2sus!4v1587726989019!5m2!1sen!2sus" tabIndex="0"></iframe>
   const map2 = <iframe className='source' title='2' src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24472.166372490945!2d116.43014820761522!3d39.940924483071946!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x35f1ac96a16510d7%3A0x5d8a2bb203d1ad86!2sChaoyang%2C%20China%2C%20100027!5e0!3m2!1sen!2sus!4v1587726571581!5m2!1sen!2sus" tabIndex="0"></iframe>
@@ -65,4 +71,4 @@ export default function Tours() {
     </div>
      
   );
-}
+}) 

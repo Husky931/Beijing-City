@@ -5,7 +5,7 @@ import MuseumBody from '../museum-components/MuseumBody'
 
 import allTheData from '../museum-components/ThumbnailsData'
 
-export default function Museums() {
+export const Museums = React.forwardRef((props, ref) => {
 
   const [sortedMuseum, setSortedMuseum] = useState(allTheData)
 
@@ -30,6 +30,11 @@ export default function Museums() {
   }
 
   useEffect(() => {
+
+    if (ref.current.checked === true) {
+      ref.current.checked = false
+ }
+
     let { museum, district, price, kids, free } = museumTotal
 
     let tempMuseum = [...museum]
@@ -60,3 +65,4 @@ export default function Museums() {
     </div>
   );
 }
+) 

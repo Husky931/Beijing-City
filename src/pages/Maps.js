@@ -1,11 +1,18 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import MapSingle from '../maps-components/MapSingle'
 
 import { headerTitle } from '../maps-components/MapsData'
 import { mapText } from '../maps-components/MapsData'
 import { imagesMaps } from '../maps-components/MapsData'
 
-export default function Maps() {
+export const Maps = React.forwardRef((props, ref) => {
+
+  useEffect(() => {
+    if (ref.current.checked === true) {
+      ref.current.checked = false
+    }
+  })
+
   return (
     <div className='maps-full-page-div'>
       <MapSingle headerTitle={headerTitle[0]} mapText={mapText[0]} img={imagesMaps[0]} />
@@ -21,4 +28,4 @@ export default function Maps() {
       <MapSingle headerTitle={headerTitle[10]} mapText={mapText[10]} img={imagesMaps[10]} />
     </div>
   );
-}
+}) 
