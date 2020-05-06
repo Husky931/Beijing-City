@@ -22,8 +22,8 @@ export const FooterMain = () => {
                     <li className='li-text'>Our developers</li>
                 </ul>
             </div>
-            <div className='ul-division'>
-                
+
+            <div className='ul-division'> 
                 <ul className='footer-ul-list'>
                 <h4 className='division-header'>Contact Us</h4>
                     <li className='li-text'>Get in touch</li>
@@ -32,8 +32,8 @@ export const FooterMain = () => {
                     <li className='li-text'>Freelance jobs</li>
                 </ul>
             </div>
+
             <div className='ul-division'>
-                
                 <ul className='footer-ul-list'>
                 <h4 className='division-header'>Legal</h4>
                     <li className='li-text'>Privacy policy</li>
@@ -42,10 +42,10 @@ export const FooterMain = () => {
                     <li className='li-text'>Booking terms</li>
                 </ul>
             </div>
+
             <div className='ul-division'>
             <h4 className='division-header'>Follow Us</h4>
                 <ul className='footer-ul-list'>
-                
                     <li><FaFacebook /></li>
                     <li><FaInstagramSquare /></li>
                     <li><FaPinterest /></li>
