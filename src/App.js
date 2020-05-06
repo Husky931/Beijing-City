@@ -7,6 +7,7 @@ import { Museums } from './pages/Museum'
 import {Foods} from './pages/Foods'
 import {Nightlife} from './pages/Nightlife'
 import {Maps} from './pages/Maps'
+import { FooterMain } from './footer/FooterMain'
 import Error from './pages/Error'
 
 import AttractionTemplatePage from './attraction-components/AttractionTemplatePage'
@@ -63,7 +64,7 @@ export default function App() {
           <Error />
         </Route>
       </Switch>
-
+    <FooterMain />
     </>
   );
 }

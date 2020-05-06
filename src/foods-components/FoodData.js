@@ -24,12 +24,6 @@ const ten = `Known as “you xiang rou si,” this spicy chicken stir-fry is som
 const eleven = `Visit the coastal cities of Shanghai or Qingdao during the fall months and you’re likely to find hairy crab everywhere you go. Steamed up to perfection, just enjoying the sweet meat from within the shells is blissful enough. Chinese people love to dip it in a sauce of dark vinegar in ginger, which some foreigners find unusual. There is no butter to dip it in so don’t bother asking.`
 const twelve = `Hot pot is a Chinese favorite. It’s not just a meal. It’s a pastime. A large cauldron of boiling water burbles up in the center of the table and you order meats and vegetables to cook up yourself in this pot. Once they’re ready, you fetch them out and dip them in a savory, salty, peanut buttery sauce. On a cold night, hot pot is the best way to spend time catching up with friends.`
 
-
-
-
-
-
-
 export const foodText = [textBeijingDuck, textInstantBoiledMutton, textPortShreds, textQuickFriedMutton, textNoodlesSoyBean, textQuickFriedTripe, seven, eight, nine, ten, eleven, twelve]
 
 export const foodImg = [foodDuckImage, foodBoiledMutton, foodNoodlesSoyBean, foodPorkShreds, foodFriedMutton, foodFriedTripe, sevenImg, eightImg, nineImg, tenImg, elevenImg, twelveImg]

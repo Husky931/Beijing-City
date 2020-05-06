@@ -739,7 +739,6 @@ label {
   outline: none;
   border: none;
 }
-
  
 /* MUSEUM PAGE BEGINS HERE ------------------------------------------------------------------------------------ */
 .museum-full-background-div {
@@ -840,7 +839,6 @@ label {
 .museum-body {
   width: 80%;
   height: auto;
-  /* border: 1px solid black; */
   margin: 30px auto;
   display: grid;
   grid-template-columns: repeat(auto-fit,minmax(270px, 1fr));
@@ -1181,6 +1179,31 @@ label {
   height: 100%;
 }
 
+/* FOOTER BEGINS BELOW  */ 
+.footer-main-div {
+  width: 100%;
+  height: 250px;
+  background-color: black;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+.ul-division {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.division-header {
+  text-align: left;
+}
+.li-text {
+  font-size: 14px;
+}
+
 
 /* MEDIA QUERIES BELOW ------------------------------------------------------------------------ */
 
@@ -1302,8 +1325,43 @@ label {
   }
 }
 
+@media only screen and (max-width: 600px) {
+.footer-main-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: auto; 
+}
+.ul-division {
+  margin-top: 30px;
+}
+
+/* .footer-main-div {
+  height: auto;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr))
+}
+.ul-division {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.division-header {
+  text-align: left;
+}
+.li-text {
+  font-size: 14px;
+} */
+
+
+}
+
 @media only screen and (max-width: 500px) { 
-  #logo-container {
+#logo-container {
     width: 110px;
     height: 70px;
     position: absolute;
