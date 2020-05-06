@@ -5,7 +5,7 @@ export default function Error() {
 
     return (
         <>
-            <Hero title={'Page not found'} subtitle={'Go back'} buttonText={'Home'} pathTo={'/'} />
+            <Hero title={'404 ERROR'} subtitle={'This page does not exist'} buttonText={'Home'} pathTo={'/'} />
         </>
     )
 }

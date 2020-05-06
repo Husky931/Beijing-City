@@ -10,8 +10,8 @@ export default function MuseumFormsField({museumTotal, handleChange, sortedMuseu
 
                 {/* DISTRICT SELECTION */}
                 <div className='district-group'>    
-                <div className='position-center'>
-                <label htmlFor='district' className='district-label'>Select district</label>
+                {/* <div className='position-center'> */}
+                <label htmlFor='district' className='district-label'> District</label>
                     <select name='district' id='district' value={district} onChange={handleChange} className='district-select-html' >
                         <option value='all'>All</option>
                         <option value='Chaoyang'>Chaoyang</option>
@@ -21,16 +21,16 @@ export default function MuseumFormsField({museumTotal, handleChange, sortedMuseu
                         <option value='Xicheng'>Xicheng</option> 
                         <option value='Changping'>Changping</option>                                  
                     </select>
-                    </div>
+                    {/* </div> */}
                 </div>
                 {/* END OF DISTRICT SELECTION */}
 
                 <div className='price-group'>   
-                <div className='position-center'> 
-                    <label htmlFor='price' className='price-label'>Price range: {price} ¥ </label>
+                {/* <div className='position-center'>  */}
+                    <label htmlFor='price' className='price-label'>Price: {price} ¥ </label>
                     <input type='range' name='price' id='price' className='input-price-range' 
                     min={minPrice} max={maxPrice} value={price} onChange={handleChange}/>
-                    </div>
+                    {/* </div> */}
                 </div>
 
                 <div className='check-group'>    

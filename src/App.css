@@ -762,7 +762,8 @@ label {
   margin: auto auto;
   display: flex;
   flex-direction: row;
-  border: 1px solid black;
+  justify-content: center;
+  align-items: center;
 }
 .district-group {
   display: flex;
@@ -777,6 +778,7 @@ label {
   width: 100%;
   display: block;
   height: 100%;
+  /* max-height: 100px; */
 }
 .district-select-html {
   width: 50%;
@@ -798,7 +800,8 @@ label {
   width: 100%;
   height: 100%;
   display: block;
-  /* height: 100%; */
+  /* max-height: 100px; */
+  /* float: left; */
 }
 .input-price-range{
   width: auto;
@@ -879,11 +882,11 @@ label {
   overflow: hidden;
   font-style: italic;
 }
-.position-center {
+/* .position-center {
   width: auto;
   height: auto;
   margin: auto auto;
-}
+} */
 .results-group {
   flex: 1;
   text-align: center;
@@ -1191,6 +1194,9 @@ label {
     width: 26px;
     float: right;
   }
+.price-label  {
+  float: none;
+}
   #nav {
     background-color: #f7f7f7;
   }
@@ -1231,9 +1237,6 @@ label {
   }
 }
 
-
-
-
 @media only screen and (max-width: 1184px) { 
   .google-maps {
     width: 100%;
@@ -1258,6 +1261,16 @@ label {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+.foods-full-div {
+  display: auto auto;
+}
+.food-father-component {
+  width: 80%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  margin: auto auto;
 }
 }
 
@@ -1297,6 +1310,24 @@ label {
     left: 20px;
     top: 5px;
   }
+.foods-full-div {
+  width: 80%;
+  height: auto;
+  background-color: rgba(192, 192, 192, 0.5);
+  border: 1px solid black;
+  margin: 40px auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-row-gap: 50px;
+  padding: 30px;
+}
+.food-father-component {
+  width: 80%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  margin: auto auto;
+} 
 }
   
 
