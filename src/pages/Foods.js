@@ -1,19 +1,11 @@
 import React, { useEffect } from 'react';
 import FoodFatherComponent from '../foods-components/FoodFatherComponent'
 
-import {textBeijingDuck} from '../foods-components/FoodData'
-import {textInstantBoiledMutton} from '../foods-components/FoodData'
-import {textPortShreds} from '../foods-components/FoodData'
-import {textQuickFriedMutton} from '../foods-components/FoodData'
-import {textNoodlesSoyBean} from '../foods-components/FoodData'
-import {textQuickFriedTripe} from '../foods-components/FoodData'
+import {foodText} from '../foods-components/FoodData'
+import {foodImg} from '../foods-components/FoodData'
+import {foodTitle} from '../foods-components/FoodData'
 
-import foodDuckImage from '../images/food-beijing-duck.jpg'
-import foodBoiledMutton from '../images/food-instant-boiled-mutton.jpg'
-import foodNoodlesSoyBean from '../images/food-noodles-soy-bean-sauce.jpg'
-import foodPorkShreds from '../images/food-pork-shreds.jpg'
-import foodFriedMutton from '../images/food-quick-fried-mutton.jpg'
-import foodFriedTripe from '../images/food-quick-fried-tripe.jpg'
+
 
 
 
@@ -27,12 +19,15 @@ export const  Foods = React.forwardRef((props, ref) => {
 
   return (
     <div className='foods-full-div'> 
-        <FoodFatherComponent title={'Beijing Duck'} img={foodDuckImage} text={textBeijingDuck} />
-        <FoodFatherComponent title={'Instant-boiled Mutton'} img={foodBoiledMutton} text={textInstantBoiledMutton} />
-        <FoodFatherComponent title={'Sautéed Pork Shreds'} img={foodPorkShreds} text={textPortShreds} />
-        <FoodFatherComponent title={'Quick-fried Mutton'} img={foodFriedMutton} text={textQuickFriedMutton} />
-        <FoodFatherComponent title={'Soy Bean Noodles'} img={foodNoodlesSoyBean} text={textNoodlesSoyBean} />
-        <FoodFatherComponent title={'Quick-fried Tripe'} img={foodFriedTripe} text={textQuickFriedTripe} />
+        {/* <FoodFatherComponent title={'Beijing Duck'} img={foodImg[5]} text={foodText[0]} />
+        <FoodFatherComponent title={'Instant-boiled Mutton'} img={foodImg[1]} text={foodText[1]} />
+        <FoodFatherComponent title={'Sautéed Pork Shreds'} img={foodImg[2]} text={foodText[2]} />
+        <FoodFatherComponent title={'Quick-fried Mutton'} img={foodImg[3]} text={foodText[3]} />
+        <FoodFatherComponent title={'Soy Bean Noodles'} img={foodImg[4]} text={foodText[4]} />
+        <FoodFatherComponent title={'Quick-fried Tripe'} img={foodImg[5]} text={foodText[5]} /> */}
+        {foodText.map((m,i) => 
+          <FoodFatherComponent  title={foodTitle[i]} text={foodText[i]} img={foodImg[i]} />
+        )}
     </div>
   );
 }) 
