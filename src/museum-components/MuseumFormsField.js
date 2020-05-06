@@ -6,8 +6,6 @@ export default function MuseumFormsField({museumTotal, handleChange, sortedMuseu
     const { district, price, maxPrice, minPrice, kids, free } = museumTotal
 
     return (
-        <section className='form-section'>
-
             <form className='form-html'>
 
                 {/* DISTRICT SELECTION */}
@@ -51,7 +49,5 @@ export default function MuseumFormsField({museumTotal, handleChange, sortedMuseu
                 <h3 className='results-group'>Results: {sortedMuseum.length}</h3>
                 
             </form>
-
-        </section>
     )
 }

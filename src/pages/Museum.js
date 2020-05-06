@@ -16,7 +16,7 @@ export const Museums = React.forwardRef((props, ref) => {
     district: 'all',
     price: 0,
     minPrice: 0,
-    maxPrice: 200,
+    maxPrice: 100,
     kids: false,
     free: false
   })

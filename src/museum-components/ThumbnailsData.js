@@ -104,7 +104,7 @@ export default [
         text: `Beijing Folklore Museum is a place of interest which stores treasures of folk-custom cultures in Beijing. Situated in Dongyue Temple, a cultural site under the first-class protection of the state, the museum is composed of grand and exquisite buildings which look especially spectacular.
         Beijing Folklore MuseumSince it opened to the public in 1999, the museum has put on exhibitions characterized by distinct folk style. Such exhibitions as Beijing Folklore Exhibition, China's Centenary Folk Costume Exhibition, Old Beijingese Life Exhibition, Etiquette and Custom Exhibition and Pouch Collection Exhibition enjoy great popularity among the people in Beijing.
         The folk cultural activities along with the festivals also attract every visitor to the museum. The activities like "walk the blessing road, round the blessing tree, draw the blessing cloth, and tie the blessing ribbon" under the theme of "pray blessing and carry the blessing home" have become a famous ceremony to celebrate the Spring Festival in the capital.`,
-        price: 180,
+        price: 74,
         free: false,
         kids: true,
         tel: '8610-65510151, 8610-65514148',
@@ -154,7 +154,7 @@ export default [
         In December 1999, there was an exhibition of prize-winning art consisiting of 588 work..The works of the gold medal winners were displayed in the Round Gallery.This eshibition was the largest ever held by the Ministry of Culture.       
         We have visited the museum many times to view showings of art works by not only Chinese artists but also by artists from many other countries.In September 1995,there was aspecial China Art Galleryshowing of portraits painted by wanghaiyan of exceptional women of the world.
         The show was mounted specially for the UN’s Fourth World Conference on Wonmen,held in Bdijing.WE were there when she presented a larger-than-life portrait as a birthday gift to Certrude Mongella,the secretary-gencral of the Conference.There are shops with books, cards, artsupplies and souvenirs for sals.`,
-        price: 130,
+        price: 43,
         free: false,
         kids: true,
         tel: '010-64001476',
@@ -224,7 +224,7 @@ export default [
         From the "nine needles" and stone needles in the Eastern Zhou Dynasty when the Classic of Internal Medicine was compiled, to the big black vat for producing medicine, you can trace Chinese medical science back to ancient times.
         Beijing Yushengtang herbal Medicine MuseumThe fossil fragments with inscribed characters of the Shang Dynasty, bamboo slips of the Han Dynasty, the prescriptions for Emperor Tongzhi of the Qing Dynasty, and herbal samples with a history of more than 100 years, indicate the countless ties between the Chinese herbal medicine and the traditional culture.
         The vicissitudes of the drugstore and the 6000-year-old history of ancient Chinese medicine have been reflected through these collections.`,
-        price: 190,
+        price: 62,
         free: false,
         kids: true,
         tel: '8610-63712176',
@@ -241,7 +241,7 @@ export default [
         11 exhibitions rooms inside the museum respectively display the development history of China's armors, tank armored cars, tank training simulators, and weapon imitated models. 
         From the first tank named little vagabond used by England in 1916 during the first world war to the brand-new battle tanks nowadays, from 59-style mid-sized tank to Japanese 90-style tank, the most costly tank in the current world, and from the Soviet T34 tank which has the longest service in the army to the tank captured by the PLA from the Kuomingtang army in the liberation war, 
         all kinds of tank will tell you the story of human's creation and employment of tanks.`,
-        price: 110,
+        price: 25,
         free: false,
         kids: false,
         tel: '8610-66759901,8610-69767910',
@@ -260,7 +260,7 @@ export default [
         and Zhou Dynasties (17th-3th centuries B.C), and the ancient art treasures as potteries, porcelains, enamels, carved lacquer ware, ivory carving ,wood carving, etc of the past dynasties.       
         The Beijing Art Museum undertakes to study in depth the ancient and traditional art of China and the rest of the world so as to raise the cultural level of the whole nation, cultivate the taste of the people.
         At the same time , we shall also provide a venue where those pioneers Beijing Art Museumwho, in this new historical era,can bring their talents into full play; and to provide a favourable enviorment in which the art zealots from all walks of life can study and appreciate works of art.`,
-        price: 65,
+        price: 16,
         free: false,
         kids: false,
         tel: '8610-68479391; 8610-68413380',
@@ -313,7 +313,7 @@ export default [
         Built in 1605, the cemetery faces south and consists of the Virtue Display Hall, the Longevity  Section, and the Convent of Compassion.      
         Encircled by a stone wall, the ceremony occupies 6,000 square meter and contains five tombs of Tian Yi and other eunuchs. Constructed mainly with stone carvings and sculptures, the ceremony is known for its high standards, exquisite carving and rich content.
         Large and completely preserved, it remains the only top-level eunuch cemetery in the country. Also, it is the only museum in China today specializing in eunuch culture.`,
-        price: 170,
+        price: 91,
         free: false,
         kids: true,
         tel: '010-88724148',
@@ -330,7 +330,7 @@ export default [
         text: `The China Stamp Museum is situated in the building of the China National Philatelic Corporation at Hepingmen. It houses an exhibition area of 5,000 sq.m and has collected 200,000 types of Chinese and foreign stamps.
         Its stamp exhibits are divided into four categories: “Stamps of the Qing Dynasty and the Republic of China,” “Stamps of the National Revolutionary War Period,” “Stamps of the National Revolutionary War Period,” 
         “Stamps and Their Records, Original Designs and Copies, and Famous Works in New China,” and “Taiwan Stamps and Stamps of Countries in the Universal Postal Union.”`,
-        price: 50,
+        price: 83,
         free:false,
         kids: false,
         tel: '010-65185511',
@@ -382,7 +382,7 @@ export default [
         The hall houses more than 200,000 fossil samples of vertebrates of various kinds in different regions. The basic displays are composed of four parts: Dinosaur World (electric mechanical simulation), Ancient Fish Hall, Ancient Reptile Hall, and Mammal Hall. The fossils and other means of display show the 
         audience the origin and evolution of pre-historic vertebrates. Academic findings in the field and the fossils inlayed in the oceanic and land stratums formed in different periods are also on display. 
         From the primitive jawless fish to the hard-bone and soft-bone fish, from amphibians to reptiles, from the past glorious dinosaur kingdom to the dominant mammal world, from ancient apes to Homo sapiens, various fossils will come into your eyes and tell you a clear outline of the development of vertebrates.`,
-        price: 90,
+        price: 77,
         free: false,
         kids: true,
         tel: '8610-68935280',
@@ -399,7 +399,7 @@ export default [
         covers more than 53,000 metres and exhibits 700 items. The "Ancient Chinese Traditional Technology Exhibition" displays some of the technologies and processes China is most famous for inventing, such as paper making and porcelain. In the "Modern Technology Hall" 
         there are several exhibits explaining the theories that underlie modern scientific thought and some important equipment that we use today. There are huge models of the universe, an exhibit explaining how a chronometer works, and lots of information about telluric physics. 
         The "Science and Technology Hall" has a large vaulted ceiling that acts as a movie screen. A film about science today is regularly shown.`,
-        price:60,
+        price:45,
         free: false,
         kids: true,
         tel: '62371177',

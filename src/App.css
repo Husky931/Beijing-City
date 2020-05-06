@@ -755,19 +755,14 @@ label {
   border: 2px solid #af9a7d;
   margin: 10px auto;
 }
-.form-section {
+
+.form-html {
   width: 80%;
   height: auto;
-  border: 1px solid black;
   margin: auto auto;
-}
-.form-html {
-  width: 100%;
-  height: auto;
   display: flex;
   flex-direction: row;
-  /* justify-content: center;
-  align-items: center; */
+  border: 1px solid black;
 }
 .district-group {
   display: flex;
