@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, forwardRef } from 'react';
 import AttractionEntryBox from '../attraction-components/AttractionEntryBox';
 import { useRouteMatch, Link } from 'react-router-dom';
 // import Error from './Error'
@@ -12,13 +12,17 @@ import summerpalace1 from '../images/summer-palace-1.jpeg';
 import templeheaven1 from '../images/temple-heaven-1.jpg';
 import tianmen1 from '../images/tianmen-square-1.jpg';
 
-// import { refContainer} from '../navigation-components/Navbar'
-
-
-export default function  Attraction() {
+export const Attraction = forwardRef((props,ref) => {
 
   let {url} = useRouteMatch()
 
+
+    useEffect(() => {
+      if (ref.current.checked === true) {
+           ref.current.checked = false
+      }
+      console.log(ref.current.checked)
+    })
 
 return (
   <>
@@ -52,4 +56,4 @@ return (
   </div>
   </>
 );
-}
+}) 

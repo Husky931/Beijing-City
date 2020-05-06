@@ -1,7 +1,7 @@
 import React, { useRef } from 'react';
-import Navbar  from './navigation-components/Navbar'
+import {Navbar}  from './navigation-components/Navbar'
 import Home from './pages/Home'
-import Attraction  from './pages/Attraction'
+import {Attraction}  from './pages/Attraction'
 import Tours from './pages/Tours'
 import Museum from './pages/Museum'
 import Foods from './pages/Foods'
@@ -19,18 +19,18 @@ import { Switch, Route } from 'react-router-dom';
 
 export default function App() {
 
-  const refContainer = useRef()
+  const ref = useRef()
 
   return (
     <>
-      <Navbar ref={refContainer} />
+      <Navbar ref={ref} />
       
       <Switch >
       <Route exact path='/'>
           <Home />
         </Route>
         <Route exact path='/attractions'>
-          <Attraction  />
+          <Attraction ref={ref} />
         </Route>
         <Route exact path='/attractions/:slug'>
           <AttractionTemplatePage />
@@ -57,7 +57,7 @@ export default function App() {
           <Error />
         </Route>
       </Switch>
-      
+
     </>
   );
 }

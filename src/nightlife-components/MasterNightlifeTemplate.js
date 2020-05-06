@@ -14,7 +14,6 @@ export default function MasterNightlifeTemplate({id, title, rating, text, open, 
 
     
     const [imageArrayNumber, setImageArrayNumber] = useState(0)
-    console.log(imageArrayNumber)
 
     const loopImageForward = () => {
         imageArrayNumber < 3 ? setImageArrayNumber(imageArrayNumber+1) : setImageArrayNumber(0);
