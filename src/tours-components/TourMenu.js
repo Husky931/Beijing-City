@@ -32,10 +32,10 @@ export default function TourHeader() {
        {
          isOpen ? 
          <ul>
-           <li className='tour-list-items'><MdOpenInNew class='menu-list-icons'/> Open in google maps</li>
-           <li className='tour-list-items'><MdLocationOn class='menu-list-icons'/> Try their location</li>
-           <li className='tour-list-items'><MdPhone class='menu-list-icons'/> Call their telephone number</li>
-           <li className='tour-list-items'><GrFacebookOption class='menu-list-icons'/> Visit Facebook page</li>
+           <li className='tour-list-items'><MdOpenInNew class='menu-list-icons'/> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Open in google maps</li>
+           <li className='tour-list-items'><MdLocationOn class='menu-list-icons'/> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Try their location</li>
+           <li className='tour-list-items'><MdPhone class='menu-list-icons'/> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Call their telephone number</li>
+           <li className='tour-list-items'><GrFacebookOption class='menu-list-icons'/> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Visit Facebook page</li>
            
          </ul>
          :

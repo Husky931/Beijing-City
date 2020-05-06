@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState } from 'react'
 import { BsCircleFill } from 'react-icons/bs'
 import { BsCircleHalf } from 'react-icons/bs'
 import { FaHeart } from 'react-icons/fa'
@@ -6,7 +6,6 @@ import { FiClock } from 'react-icons/fi'
 import { BsClockHistory } from 'react-icons/bs'
 import { MdLocationOn } from 'react-icons/md'
 import { FiEdit2 } from 'react-icons/fi'
-import { FaMapMarked } from 'react-icons/fa'
 
 
 

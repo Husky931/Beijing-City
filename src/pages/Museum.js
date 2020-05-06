@@ -5,6 +5,8 @@ import MuseumBody from '../museum-components/MuseumBody'
 
 import allTheData from '../museum-components/ThumbnailsData'
 
+
+
 export const Museums = React.forwardRef((props, ref) => {
 
   const [sortedMuseum, setSortedMuseum] = useState(allTheData)
@@ -54,7 +56,7 @@ export const Museums = React.forwardRef((props, ref) => {
     }
 
     setSortedMuseum(tempMuseum)
-  },[museumTotal])
+  },[museumTotal, ref])
 
   return (
     <div className='museum-full-background-div'>

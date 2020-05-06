@@ -218,6 +218,9 @@ label {
   margin: 0;
   outline:none;
 }
+.information-cube-plus-button:hover {
+  transform: scale(1.2)
+}
 .popup-window {
   width: auto;
   height: auto;
@@ -304,6 +307,9 @@ label {
 .tour-text-paragraph {
   text-align: justify;
   padding: 8px;
+  font-style: italic;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 200;
 }
 .tour-header-title {
   font-family: 'Montserrat', sans-serif;
@@ -343,16 +349,19 @@ label {
   outline: none;
  
 }
-.tour-list-items {
-  margin-top: 22px;
-}
 .tour-menu-header {
   text-decoration: underline;
+}
+.tour-list-items {
+  margin-top: 22px;
+  position: relative;
 }
 
 .menu-list-icons {
   text-align: end;
   font-size: 1.3rem;
+  position: absolute;
+  cursor: pointer;
 }
 .menu-list-icons-button-wrapper {
   width: auto;
@@ -418,12 +427,15 @@ label {
 }
 #icon-1:hover {
   filter: brightness(85%);
+  transform: scale(1.2);
 }
 #icon-2:hover {
   filter: brightness(85%);
+  transform: scale(1.2);
 }
 #icon-3:hover {
   filter: brightness(85%);
+  transform: scale(1.2);
 }
 #icon-2{
   margin-right: 7px;
@@ -477,12 +489,12 @@ label {
   display: flex;
   flex-direction: row;
   background-color: white;
-  background-color: #f2f2f2
 }
 .left-side-attraction {
   /* border: 1px solid silver; */
   flex: 3;
   padding-right: 20px;
+  background-color: #f2f2f2
 }
 .right-side-attraction {
   /* border: 1px solid silver; */
@@ -765,7 +777,6 @@ label {
   height: 100%;
 } 
 
-
 .district-label {
   font-size: 20px;
   width: 100%;
@@ -831,7 +842,7 @@ label {
 .museum-body {
   width: 80%;
   height: auto;
-  border: 1px solid black;
+  /* border: 1px solid black; */
   margin: 30px auto;
   display: grid;
   grid-template-columns: repeat(auto-fit,minmax(270px, 1fr));
@@ -843,12 +854,14 @@ label {
 
 .museum-thumbnail {
   width: 270px;
-  height: auto;
+  height: 430px;
   border: 1px solid silver;
+  box-shadow: 3px 2px 15px  #888888;
 }
 .museum-thumbnail:hover {
   cursor: pointer;
-  box-shadow: 3px 2px 15px  #888888;
+  transition: all 0.3s linear;
+  box-shadow: none;
 }
 .museum-thumbnail-image-holder {
   width: 100%;
@@ -869,6 +882,7 @@ label {
   padding: 5px;
   max-height: 150px;
   overflow: hidden;
+  font-style: italic;
 }
 .position-center {
   width: auto;
@@ -1225,14 +1239,6 @@ label {
 
 
 
-
-
-
-
-
-
-
-
 @media only screen and (max-width: 1184px) { 
   .google-maps {
     width: 100%;
@@ -1248,6 +1254,33 @@ label {
 @media only screen and (max-width: 1026px) { 
   .right-side {
     display: none;
+  }
+}
+
+@media only screen and (max-width: 950px) {
+.attraction-template-page-full {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+}
+
+@media only screen and (max-width: 750px) {
+  .museum-body {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(275px, 1fr));
+    grid-row-gap: 2rem;
+    grid-column-gap: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+.museum-thumbnail {
+    width: 70%;
+    height: 430px;
+    border: 1px solid silver;
+    box-shadow: 3px 2px 15px  #888888;
+    margin: auto auto;
   }
 }
 
