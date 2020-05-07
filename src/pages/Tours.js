@@ -2,6 +2,8 @@ import React, { useEffect } from 'react';
 import TourComplete from '../tours-components/TourComplete';
 import GoogleMaps from '../tours-components/GoogleMaps';
 
+import Header from '../Header'
+
 import hutongFirstImage from '../images/tours-hutong-walking.jpg';
 import sideCarsImage from '../images/tours-sidecars.jpg';
 import hutongSecondImage from '../images/tour-hutong-2.jpg';
@@ -21,6 +23,7 @@ import { bikingText } from '../tours-components/TourTextParagraphs'
 import { foodText } from '../tours-components/TourTextParagraphs'
 import { artText } from '../tours-components/TourTextParagraphs'
 import { imperialText } from '../tours-components/TourTextParagraphs'
+import pic2 from '../images/header2.webp';
 
 export const Tours = React.forwardRef((props, ref) => {
 
@@ -42,6 +45,8 @@ export const Tours = React.forwardRef((props, ref) => {
 
 
   return (
+    <>
+    <Header pic={pic2} />
     <div className='tours-page'>
 
       <div className='left-side'>
@@ -69,6 +74,6 @@ export const Tours = React.forwardRef((props, ref) => {
       </div>
 
     </div>
-     
+     </>
   );
 }) 

@@ -2,6 +2,10 @@ import React, { useEffect } from 'react';
 import MasterNightlifeTemplate from '../nightlife-components/MasterNightlifeTemplate'
 import nightlifeData from '../nightlife-components/NightlifeSingleComponentData'
 
+import Header from '../Header'
+
+
+import pic6 from '../images/header6.jpg';
 
 export const Nightlife = React.forwardRef((props, ref) => {
 
@@ -12,6 +16,8 @@ export const Nightlife = React.forwardRef((props, ref) => {
   })
   
   return (
+    <>
+    <Header pic={pic6} />
     <div className='nightlife-full-page-div'>
 
     { nightlifeData.map(m =>  
@@ -20,5 +26,6 @@ export const Nightlife = React.forwardRef((props, ref) => {
     ) }
 
     </div>
+    </>
   );
 }) 

@@ -8,9 +8,13 @@ import { BsCircleFill } from 'react-icons/bs'
 import { FaHeart } from 'react-icons/fa'
 import { FaWalking } from 'react-icons/fa'
 
+import Header from '../Header'
+
 import { useParams } from 'react-router-dom'
 
 import textData from './AttractionSinglePageData';
+
+import pic7 from '../images/header7.jpg';
 
 export default function AttractionTemplatePage() {
 
@@ -32,6 +36,8 @@ export default function AttractionTemplatePage() {
        }
 
     return (
+        <>
+        <Header pic= {pic7} />
         <div className='attraction-template-page-full'>
             <div className='left-side-attraction'>
                 <div className='template-header'>
@@ -95,5 +101,6 @@ export default function AttractionTemplatePage() {
                </div>
             </div>
         </div>
+        </>
     )
 }

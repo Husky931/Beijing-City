@@ -5,9 +5,9 @@ import {foodText} from '../foods-components/FoodData'
 import {foodImg} from '../foods-components/FoodData'
 import {foodTitle} from '../foods-components/FoodData'
 
+import Header from '../Header'
 
-
-
+import pic3 from '../images/header3.jpg';
 
 export const  Foods = React.forwardRef((props, ref) => {
 
@@ -18,6 +18,8 @@ export const  Foods = React.forwardRef((props, ref) => {
   })
 
   return (
+    <>
+    <Header pic={pic3} />
     <div className='foods-full-div'> 
         {/* <FoodFatherComponent title={'Beijing Duck'} img={foodImg[5]} text={foodText[0]} />
         <FoodFatherComponent title={'Instant-boiled Mutton'} img={foodImg[1]} text={foodText[1]} />
@@ -29,5 +31,6 @@ export const  Foods = React.forwardRef((props, ref) => {
           <FoodFatherComponent  title={foodTitle[i]} text={foodText[i]} img={foodImg[i]} />
         )}
     </div>
+    </>
   );
 }) 

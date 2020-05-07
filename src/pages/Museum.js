@@ -5,7 +5,9 @@ import MuseumBody from '../museum-components/MuseumBody'
 
 import allTheData from '../museum-components/ThumbnailsData'
 
+import Header from '../Header'
 
+import pic5 from '../images/header5.jpg';
 
 export const Museums = React.forwardRef((props, ref) => {
 
@@ -59,12 +61,15 @@ export const Museums = React.forwardRef((props, ref) => {
   },[museumTotal, ref])
 
   return (
+    <>
+    <Header pic={pic5}/>
     <div className='museum-full-background-div'>
       <h1 className='search-museum-top-header'>Search Museums</h1>
       <div className='museum-line-top'></div>
       <MusemFormsField museumTotal={museumTotal} handleChange={handleChange} sortedMuseum={sortedMuseum} />
       <MuseumBody sortedMuseum={sortedMuseum} />
     </div>
+    </>
   );
 }
 ) 

@@ -3,6 +3,8 @@ import AttractionEntryBox from '../attraction-components/AttractionEntryBox';
 import { useRouteMatch, Link } from 'react-router-dom';
 // import Error from './Error'
 
+import Header from '../Header'
+
 import beihai1 from '../images/beihai-1.jpeg';
 import forbidden1 from '../images/forbidden-city-1.jpeg';
 import greatwall1 from '../images/great-wall-1.jpeg';
@@ -11,6 +13,7 @@ import lamatemple1 from '../images/lama-temple-1.jpg';
 import summerpalace1 from '../images/summer-palace-1.jpeg';
 import templeheaven1 from '../images/temple-heaven-1.jpg';
 import tianmen1 from '../images/tianmen-square-1.jpg';
+import pic1 from '../images/header1.jpg';
 
 export const Attraction = forwardRef((props,ref) => {
 
@@ -24,6 +27,7 @@ export const Attraction = forwardRef((props,ref) => {
 
 return (
   <>
+  <Header pic={pic1} />
   <div className='attraction-full-div-component'>
       <Link to={`${url}/lama-temple`} className='link-attractions'>
             <AttractionEntryBox img={lamatemple1} title={'Lama temple'} introText={'A series of beautiful pavilions comprise this Mongolian-Tibetan yellow-sect temple, which features an impressive fifty-four-foot high Buddha carved from one piece of Tibetan sandalwood.'} />

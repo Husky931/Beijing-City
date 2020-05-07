@@ -5,6 +5,10 @@ import { headerTitle } from '../maps-components/MapsData'
 import { mapText } from '../maps-components/MapsData'
 import { imagesMaps } from '../maps-components/MapsData'
 
+import Header from '../Header'
+
+import pic4 from '../images/header4.jpg';
+
 export const Maps = React.forwardRef((props, ref) => {
 
   useEffect(() => {
@@ -14,6 +18,8 @@ export const Maps = React.forwardRef((props, ref) => {
   })
 
   return (
+    <>
+    <Header pic={pic4} />
     <div className='maps-full-page-div'>
       <MapSingle headerTitle={headerTitle[0]} mapText={mapText[0]} img={imagesMaps[0]} />
       <MapSingle headerTitle={headerTitle[1]} mapText={mapText[1]} img={imagesMaps[1]} />
@@ -27,5 +33,6 @@ export const Maps = React.forwardRef((props, ref) => {
       <MapSingle headerTitle={headerTitle[9]} mapText={mapText[9]} img={imagesMaps[9]} />
       <MapSingle headerTitle={headerTitle[10]} mapText={mapText[10]} img={imagesMaps[10]} />
     </div>
+    </>
   );
 }) 
