@@ -26,7 +26,7 @@ export const Museums = React.forwardRef((props, ref) => {
   const handleChange = (e) => {
     const value = e.target.type === 'checkbox' ? e.target.checked : e.target.value
     const name = e.target.name
-   
+
     setMuseumTotal({
       ...museumTotal,
       [name]: value,
@@ -40,13 +40,12 @@ export const Museums = React.forwardRef((props, ref) => {
  }
 
     let { museum, district, price, kids, free } = museumTotal
-
     let tempMuseum = [...museum]
 
     if (district !== 'all') {
         tempMuseum = tempMuseum.filter(f => f.district === district)
     }
-    
+
     tempMuseum = tempMuseum.filter(f => f.price >= price)
 
     if (kids) {
@@ -72,4 +71,4 @@ export const Museums = React.forwardRef((props, ref) => {
     </>
   );
 }
-) 
+)
